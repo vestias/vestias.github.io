@@ -1,0 +1,9 @@
+.container-fluid {
+  border-bottom: 1px solid #d3cfcf;
+}
+
+img {
+  width: 250px;
+  padding: 10px;
+  float: left;
+}

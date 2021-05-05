@@ -1,0 +1,135 @@
+.fiche{
+	padding-top: 50px
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+input:focus{
+	outline:none;
+}
+*{
+	font-family: 'Lato',sans-serif;
+}
+
+.firstp{
+	text-align: left;
+	padding-left: calc(5% + 110px);
+	font-size: 25px;
+}
+.secondp{
+	text-align: right;
+	padding-right: calc(5% + 450px);
+	font-size: 20px;
+	font-weight: li !important;
+	
+}
+
+
+
+.grid-container2 {
+	color: black;
+	display: grid;
+	margin-left: 5%;
+	margin-right: 5%;
+	grid-template-columns: 100px 60% minmax(200px, 400px);
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "c1 c2 c3";
+}
+
+.c11 {
+	grid-area: c1;
+}
+
+.c22 {
+	grid-area: c2;
+}
+
+.c33 {
+	border-left: 1px solid gray;
+	margin-left: 50px;
+  	width: 100%;
+	display: flex;
+	align-items:top;
+	justify-content: center;
+}
+.c33 form{
+	width: 75%;
+	padding: 20px;
+	margin : 30px auto;
+}
+.c33 form p{
+	color:#000;
+	font-size: 18px;
+}
+.c33 form input{
+	width: 90%;
+	display: block;
+	margin: 10px auto;
+	padding: 12px 10px;
+	border: 1px solid gray;
+	border-radius: 3px;
+	font-size: 15px;
+}
+.c33 form input[type="submit"]{
+	margin-top: 30px;
+	background-color: lightsalmon;
+	border-radius: 5px;
+	border: 1px solid lightsalmon;
+	color:#fff;
+	font-weight: bold;
+	opacity: 1;
+	cursor: pointer;
+}
+
+p.contact {
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+	font-family: 'Courier New';
+	text-align: center;
+  width: 100%;
+}
+
+
+p.title {
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Courier New', monospace;
+}
+
+p.contact_title {
+	font-family: 'Courier New', monospace;
+	color: black;
+}
+
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+.tabs {
+	margin-top: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	
+
+}
+
+.icons {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	row-gap: 20px;
+	grid-template-areas: "c4" "c5" "c6" "c7";
+}
+
+.tabs p{
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10%;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0px 0px 24px;
+}
+
+.tab-pane{
+	padding-top: 20px;
+}
