@@ -15,12 +15,14 @@
   margin-right: 10%;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 1fr;
-  margin-top: 5px;
+  margin-top: 20px;
   padding: 10px;
   grid-template-areas: "c1 c2";
   border-radius: 3px;
 }
-
+.grid-container:hover {
+  border: 1px solid black;
+}
 .grid-container:hover .detail_button {
   visibility: visible;
 }
@@ -76,5 +78,5 @@ p.item_text {
 }
 
 .c2 button:hover {
-	color: black;
-  }
+  color: black;
+}

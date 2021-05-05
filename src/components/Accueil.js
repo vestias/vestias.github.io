@@ -18,29 +18,28 @@ const Accueil = () => {
 
       <Recommandation></Recommandation>
 
-
       <div id="container">
         <Multi_slider></Multi_slider>
       </div>
 
       <div className="buy_container">
         <div>
-        <h1 className="title6" >J'achete ma maison</h1>
+          <h1 className="title6">J'achete ma maison</h1>
         </div>
         <div>
           <div>
-          <img width="1000px" src="https://www.immobilio.ma/wp-content/uploads/2021/02/Entre%CC%81e-de-l-appartement.jpg" />
+            <img
+              width="1000px"
+              src="https://www.immobilio.ma/wp-content/uploads/2021/02/Entre%CC%81e-de-l-appartement.jpg"
+            />
           </div>
           <div>
             <p>Lorem ipsum dolor sit amet</p>
             <p>Lorem ipsum dolor sit amet</p>
-
             <p>Lorem ipsum dolor sit amet</p>
-
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

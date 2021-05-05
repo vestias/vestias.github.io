@@ -2,10 +2,6 @@ import React from "react";
 import "./Item.css";
 import { Link } from "react-router-dom";
 
-const imageClick = () => {
-  console.log("Click");
-};
-
 const Item = () => {
   return (
     <div>
@@ -31,7 +27,9 @@ const Item = () => {
             Superficie : 106 m². – Composition : Une entrée, un salon marocain
             avec grand balcon, 2 chambres à coucher avec rangements et
           </p>
+          <Link to="Fiche">
           <button className="detail_button">Details</button>
+          </Link>
         </div>
       </div>
     </div>

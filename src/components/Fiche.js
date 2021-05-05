@@ -1,13 +1,13 @@
 import React from "react";
 import ImageGallery from "react-image-gallery";
 import "./fiche.css";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 
-import ReactDOM from "react-dom";
 import { SocialIcon } from "react-social-icons";
 
+
 const Fiche = () => {
+
   const images = [
     {
       original:
