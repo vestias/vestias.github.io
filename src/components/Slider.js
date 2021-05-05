@@ -9,7 +9,7 @@ const Slider = () => {
       data-ride="carousel"
     >
       <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="1000">
+        <div class="carousel-item active" data-interval="5000">
           <img
             src="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg"
             class="d-block w-100"

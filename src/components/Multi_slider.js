@@ -19,7 +19,7 @@ class multi_slider extends React.Component {
       centerMode: false,
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 1000
+      autoplaySpeed: 3000
     };
     return (
       <div>
