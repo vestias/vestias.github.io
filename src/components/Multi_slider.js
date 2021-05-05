@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Slider from "react-slick";
 import "./multi_slider.css";
 import "slick-carousel/slick/slick.css";
@@ -10,6 +9,7 @@ class multi_slider extends React.Component {
   render() {
     var settings = {
       dots: false,
+      
       accessibility: true,
       adaptiveHeight: true,
       centerMode: true,
@@ -18,6 +18,8 @@ class multi_slider extends React.Component {
       draggable: true,
       centerMode: false,
       arrows: false,
+      autoplay: true,
+      autoplaySpeed: 1000
     };
     return (
       <div>

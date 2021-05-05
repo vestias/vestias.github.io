@@ -9,18 +9,18 @@ const imageClick = () => {
 const Item = () => {
   return (
     <div>
-      <div class="grid-container">
-        <div class="c1">
+      <div className="grid-container">
+        <div className="c1">
           <Link to="Fiche">
             <img
-              class="img"
+              className="img"
               src="https://www.immobilio.ma/wp-content/uploads/2021/04/Grand-Salon-Marocain.jpeg"
             />
           </Link>
         </div>
-        <div class="c2">
-          <div class="title-price">
-            <p class="item_title">Appartement À Vendre à Nejma Tanger</p>
+        <div className="c2">
+          <div className="title-price">
+            <p className="item_title">Appartement À Vendre à Nejma Tanger</p>
             <span>42.840.000 MAD</span>
           </div>
           <p class="item_text">
@@ -31,7 +31,7 @@ const Item = () => {
             Superficie : 106 m². – Composition : Une entrée, un salon marocain
             avec grand balcon, 2 chambres à coucher avec rangements et
           </p>
-          <button>Details</button>
+          <button className="detail_button">Details</button>
         </div>
       </div>
     </div>
