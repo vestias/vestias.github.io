@@ -1,6 +1,6 @@
 import './App.css';
 
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import Accueil from './components/Accueil';
@@ -30,7 +30,6 @@ function App() {
 
       
       <header className="App-header">
-          
       <BrowserRouter>
         <div>
           <Navbar />
@@ -68,7 +67,7 @@ function App() {
               <div><SocialIcon bgColor="#fff" style={{ height: 40, width: 40 }} fgcolor="#1a789a"  url="https://instagram.com" /></div>
               <div><SocialIcon bgColor="#fff" style={{ height: 40, width: 40 }} fgcolor="#1a789a"  url="https://youtube.com" /></div>
             </div>
-            <img src="https://www.immobilio.ma/wp-content/uploads/2018/09/Logo-01.png"/>
+            <img  alt="alt" src="https://www.immobilio.ma/wp-content/uploads/2018/09/Logo-01.png"/>
            
           </div>
 

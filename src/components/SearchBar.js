@@ -43,22 +43,22 @@ const SearchBar = () => {
 	
   return (
    <div className="searchBox">
-      <h1 class="title5">Trouvez votre logement</h1>
-      <div class="search_Container">
-         <div class="area1">
+      <h1 className="title5">Trouvez votre logement</h1>
+      <div className="search_Container">
+         <div className="area1">
             <button class="resetB">réinitialiser</button>
          </div>
-         <div class="area2">             
+         <div className="area2">             
             <Link to="/Decouvert?type=shirt&Categorie=blue">
-              <button class="SearchB">Recherche</button>
+              <button className="SearchB">Recherche</button>
             </Link>
          </div>
-         <div class="area3">
+         <div className="area3">
             <form>   
                <input type="text"  className="SearchA" placeholder="Mots clés" />
             </form>
          </div>
-         <div class="area4">
+         <div className="area4">
             <form>    
             <AutosuggestReact
             placeholder="Categories"
@@ -66,7 +66,7 @@ const SearchBar = () => {
          ></AutosuggestReact>
             </form>
          </div>
-         <div class="area5">
+         <div className="area5">
             <form>    
          <AutosuggestReact
             placeholder="Type"

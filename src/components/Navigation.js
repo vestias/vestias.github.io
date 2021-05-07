@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div class="topnav">
-      <div class="nav-items">
-          <img src="https://www.immobilio.ma/wp-content/uploads/2018/09/Logo-01.png" />
+    <div className="topnav">
+      <div className="nav-items">
+          <img alt="alt" src="https://www.immobilio.ma/wp-content/uploads/2018/09/Logo-01.png" />
         <NavLink className="nav_text" to="/Accueil">
           Accueil
         </NavLink>

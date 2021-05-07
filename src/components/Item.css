@@ -1,6 +1,6 @@
 .c1 img {
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 250px;
 }
 
 .c1 img:hover {
@@ -11,12 +11,12 @@
   border: 1px solid #ccc;
   padding: 1px;
   display: grid;
-  margin-left: 10%;
-  margin-right: 10%;
-  grid-template-columns: 300px 1fr;
+  margin-left: 15%;
+  margin-right: 15%;
+  grid-template-columns: 350px 1fr;
   grid-template-rows: 1fr;
   margin-top: 20px;
-  padding: 10px;
+  padding: 0px;
   grid-template-areas: "c1 c2";
   border-radius: 3px;
 }
@@ -32,6 +32,7 @@
 
 .c2 {
   grid-area: c2;
+  padding: 10px;
 }
 
 p {

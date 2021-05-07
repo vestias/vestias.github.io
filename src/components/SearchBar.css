@@ -1,45 +1,52 @@
-.searchBox{
+.searchBox {
   padding: 60px;
-  
 }
 
 .search_Container {
-    background-color: #f0f0f0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 2fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 8px 15px;
-    grid-template-areas:
-      "area1 area2 area3 area4"
-      "area5 area5 area5 area5";
-  }
-  
-  .area1 { grid-area: area1;
-    padding: 5px;
- }
-  
-  .area2 { grid-area: area2; 
-    padding: 5px;
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 8px 15px;
+  grid-template-areas:
+    "area1 area2 area3 area4"
+    "area5 area5 area5 area5";
 }
-  
-  .area3 { grid-area: area3;    padding: 5px;
-  }
-  
-  .area4 { grid-area: area4;    padding: 5px;
-  }
-  
-  .area5 { grid-area: area5; }
-  
-  .resetB {
-    border-radius: 3px;
-    text-transform: uppercase;
-    padding: 10px 32px;
-    line-height: 34px;
-    color: #000; 
-    cursor: pointer;
+
+.area1 {
+  grid-area: area1;
+  padding: 5px;
+}
+
+.area2 {
+  grid-area: area2;
+  padding: 5px;
+}
+
+.area3 {
+  grid-area: area3;
+  padding: 5px;
+}
+
+.area4 {
+  grid-area: area4;
+  padding: 5px;
+}
+
+.area5 {
+  grid-area: area5;
+}
+
+.resetB {
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 10px 32px;
+  line-height: 34px;
+  color: #000;
+  cursor: pointer;
   background-color: lightsalmon; /* Green */
   color: white;
   width: 100%;
@@ -50,105 +57,99 @@
   margin: 4px 2px;
   cursor: pointer;
   border: 1px solid lightsalmon;
-  }
-
-  .SearchB {
-    border-radius: 3px;
-    text-transform: uppercase;
-    padding: 10px 32px;
-    line-height: 34px;
-    color: #000; 
-    cursor: pointer;
-    background-color: #1a789a; /* Green */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 10px 4px 2px;
-    transition-duration: 0.4s;
-    background-color: #f0f0f0; 
-    border: 1px solid #1a789a;
-    width: 100%;
-  }
-  .SearchB:hover {
-    background-color: #1a789a;
-    color: #fff;
-  }
-
-  .SearchA{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    position:relative;
-  }
-
-
-
-.title5{
-    
-    padding-right: 5%;
-    padding-bottom: 30px;
-    color:#1a789a ;
-    font-size:xx-large;
-    font-weight: bold;
-    text-align: center;
-
 }
 
+.SearchB {
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 10px 32px;
+  line-height: 34px;
+  color: #000;
+  cursor: pointer;
+  background-color: #1a789a; /* Green */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px 4px 2px;
+  transition-duration: 0.4s;
+  background-color: #f0f0f0;
+  border: 1px solid #1a789a;
+  width: 100%;
+}
+.SearchB:hover {
+  background-color: #1a789a;
+  color: #fff;
+}
 
+.SearchA {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.title5 {
+  padding-right: 5%;
+  padding-bottom: 30px;
+  color: #1a789a;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+}
 
 /* search suggestions */
-  
-  .react-autosuggest__container {
-    position: relative;
-  }
-  
-  .react-autosuggest__input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    position:relative;
-  }
-  
-  .react-autosuggest__input--focused {
-    outline: none;
-  }
-  
-  .react-autosuggest__suggestions-container--open {
-    display: block;
-    position: absolute;
-    top: 50px;
-    width: calc(100% - 3px);
-    margin: 0;
-    margin-left: 11px;
-    border: 1px solid #aaa;
-    background-color: #fff;
-    text-align: left;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    z-index: 2;
-  }
-  
-  .react-autosuggest__suggestions-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  .react-autosuggest__suggestion {
-    cursor: pointer;
-    padding: 10px 20px;
-  }
-  
-  .react-autosuggest__suggestion--highlighted {
-    background-color: #ddd;
-  }
-  
+
+.react-autosuggest__container {
+  position: relative;
+}
+
+.react-autosuggest__input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 50px;
+  width: calc(100% - 5px);
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 13px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  text-align: left;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #ddd;
+}

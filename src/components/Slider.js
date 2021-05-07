@@ -1,6 +1,49 @@
 import React from "react";
 
-const Slider = () => {
+const slides = [];
+
+var i = 0;
+
+class Slider extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    console.log(this.props.Array);
+  for (const [index, value] of this.props.Array.entries()) {
+    if(i==0)
+    {
+      i=-1;
+      slides.push(
+        <div className="carousel-item active" data-interval="5000">
+        <img
+          src={value.src}
+          className="d-block w-100"
+          alt="..."
+          height="700"
+        ></img>
+      </div>
+      );
+    }
+    else
+    {
+      slides.push(
+        <div className="carousel-item" data-interval="5000">
+        <img
+          src={value.src}
+          className="d-block w-100"
+          alt="..."
+          height="700"
+        ></img>
+      </div>
+      );
+    }
+    
+  }
+  }
+
+  
+  render() {
+
   return (
     <div className="home_slider">
     <div
@@ -9,30 +52,7 @@ const Slider = () => {
       data-ride="carousel"
     >
       <div className="carousel-inner">
-        <div className="carousel-item active" data-interval="5000">
-          <img
-            src="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg"
-            class="d-block w-100"
-            alt="..."
-            height="700"
-          ></img>
-        </div>
-        <div className="carousel-item" data-interval="2000">
-          <img
-            src="https://www.immobilio.ma/wp-content/uploads/2021/02/Studio-Anfa-Sky-Casa-Anfa.jpg"
-            class="d-block w-100"
-            alt="..."
-            height="700"
-          ></img>
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://www.immobilio.ma/wp-content/uploads/2021/02/Salon-studio-Casa-Anfa.jpg"
-            class="d-block w-100"
-            alt="..."
-            height="700"
-          ></img>
-        </div>
+        {slides}
       </div>
       <a
         className="carousel-control-prev"
@@ -56,6 +76,7 @@ const Slider = () => {
   </div>
 
   );
+  }
 }
 
 export default Slider;
