@@ -58,7 +58,9 @@ class multi_slider extends React.Component {
 
     for (const [index, value] of array.entries()) {
       items.push(
+
         <div className="slide_content">
+          
           <div className="slide_top">
             <Link to="Fiche" style={{ textDecoration: "none" }}>
               <span href="fiche">{value.type}</span>
@@ -71,6 +73,7 @@ class multi_slider extends React.Component {
             <span>{value.bains} bains</span>
           </div>
         </div>
+        
       );
     }
     return (

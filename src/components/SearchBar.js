@@ -66,14 +66,7 @@ const SearchBar = () => {
             ></AutosuggestReact>
           </form>
         </div>
-        <div className="area5">
-          <form>
-            <AutosuggestReact
-              placeholder="Type"
-              data={types}
-            ></AutosuggestReact>
-          </form>
-        </div>
+        
       </div>
     </div>
   );
