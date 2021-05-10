@@ -8,7 +8,6 @@ class Slider extends React.Component {
   
   constructor(props) {
     super(props);
-    console.log(this.props.Array);
   for (const [index, value] of this.props.Array.entries()) {
     if(i==0)
     {

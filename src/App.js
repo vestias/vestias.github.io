@@ -8,6 +8,9 @@ import Decouvert from './components/Decouvert';
 import Contact from './components/Contact';
 import Error from './components/Error';
 import Fiche from './components/Fiche';
+import users from './components/Users';
+import Annonces from './components/Annonces';
+import slides from './components/slides';
 
 import { SocialIcon } from 'react-social-icons';
 
@@ -39,6 +42,10 @@ function App() {
              <Route path="/Decouvert" component={Decouvert}/> 
              <Route path="/Contact" component={Contact}/>
              <Route path="/Fiche" component={Fiche}/>
+             <Route path="/users" component={users}/>
+             <Route path="/Annonces" component={Annonces}/>
+             <Route path="/slides" component={slides}/>
+
             <Route component={Error}/>
            </Switch>
         </div> 

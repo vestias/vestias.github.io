@@ -16,7 +16,7 @@ const Decouvert = () => {
   console.log(Categorie);
 
   var array = [
-    {
+    { 
       title: "Appartement À Vendre à Nejma Tanger",
       price: "20.000.000",
       description:

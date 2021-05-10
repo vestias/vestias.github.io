@@ -1,12 +1,14 @@
 {
   "name": "app",
   "version": "0.1.0",
+  "homepage": "http://m-w.ma",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.6",
+    "@testing-library/react": "^11.2.npm6",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.6.0",
+    "http-server": "^0.12.3",
     "jquery": "^3.6.0",
     "mdbreact": "^5.0.2",
     "popper.js": "^1.16.1",

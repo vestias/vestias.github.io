@@ -58,3 +58,14 @@ footer{
     align-items:flex-start;
   }
 }
+
+
+.recom_title{
+  margin-top: 50px;
+  padding-right: 5%;
+  padding-bottom: 30px;
+  color: #1a789a;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+}

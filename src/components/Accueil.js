@@ -5,7 +5,12 @@ import Slider from "./Slider.js";
 
 import SearchBar from "./SearchBar.js";
 import Multi_slider from "./Multi_slider.js";
-import Recommandation from "./Recommandation.js";
+
+
+fetch('http://localhost:8080/users')
+  .then(response => response.json())
+  .then(data => console.log(data[0].email));
+
 
 var Array = [
   {
@@ -32,13 +37,14 @@ class Accueil extends React.Component {
     return (
       <div>
         <div className="App"></div>
+    
+    <div className="search_cont">
+    <SearchBar></SearchBar>
+
+    </div>
   
-        <Slider Array={Array} ></Slider>
-  
-        <SearchBar></SearchBar>
-  
-        <Recommandation></Recommandation>
-  
+        <h1 className="recom_title">Annonces recommandées</h1>  
+
         <div id="container">
           <Multi_slider></Multi_slider>
         </div>
@@ -54,11 +60,22 @@ class Accueil extends React.Component {
                 src="https://www.immobilio.ma/wp-content/uploads/2021/02/Entre%CC%81e-de-l-appartement.jpg"
               />
             </div>
-            <div>
-              <p>Lorem ipsum dolor sit amet</p>
-              <p>Lorem ipsum dolor sit amet</p>
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
+            <div className="c333">
+            <form>
+              <input type="text" name="name" placeholder="Votre nom" />
+              <input
+                type="email"
+                name="email"
+                placeholder="Votre adresse email"
+              />
+              <input
+                type="tel"
+                name="tel"
+                placeholder="Votre numéro de télephone"
+              />
+              <input type="submit" value="CONTACTER" />
+            </form>
+          </div>
           </div>
         </div>
       </div>

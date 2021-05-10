@@ -7,9 +7,7 @@ const Recommandation = () => {
 
     return (
        <div>
-             <h1 className="title5">Annonces recommandées</h1>
-
-        
+            
        </div>
     );
 }
