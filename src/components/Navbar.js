@@ -52,6 +52,7 @@ const Navbar = () => {
               style={{ height: 30, width: 30 }}
               fgcolor="#1a789a"
               url="https://facebook.com"
+              target="_blank"
             />
           </div>
           <div className="icon">
@@ -60,6 +61,7 @@ const Navbar = () => {
               style={{ height: 30, width: 30 }}
               fgcolor="#1a789a"
               url="https://twitter.com"
+              target="_blank"
             />
           </div>
         </div>

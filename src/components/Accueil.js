@@ -51,7 +51,7 @@ class Accueil extends React.Component {
   
         <div className="buy_container">
           <div>
-            <h1 className="title6">J'achete ma maison !</h1>
+            <h1 className="title6">Informations pour futur acheteur</h1>
           </div>
           <div>
             <div>
