@@ -7,11 +7,9 @@ import AutosuggestReact from "./AutosuggestReact.js";
 const types = [
   {
     name: "Appartements",
-    year: 1972,
   },
   {
     name: "locaux commerciaux et autres",
-    year: 2000,
   },
   {
     name: "Maisons et Villas",
@@ -24,18 +22,45 @@ const types = [
   },
 ];
 
-const Categories = [
+const villes = [
   {
-    name: "A LOUER",
+    name: "Casablanca",
   },
   {
-    name: "A VENDRE",
+    name: "Fes",
   },
   {
-    name: "LOCATION DE VACANCES",
+    name: "Tangier",
   },
+  ,
+  {
+    name: "Marrakesh",
+  },
+  {
+    name: "Rabat",
+  }
+  
 ];
 
+const zones = [
+  {
+    name: "	Casablanca-Settat",
+  },
+  {
+    name: "Fès-Meknès",
+  },
+  {
+    name: "	Tanger-Tetouan-Al Hoceima",
+  },
+  ,
+  {
+    name: "	Marrakesh-Safi",
+  },
+  {
+    name: "Rabat-Salé-Kénitra",
+  }
+  
+];
 
 const SearchBar = () => {
   return (
@@ -54,7 +79,7 @@ const SearchBar = () => {
           <form>
             <AutosuggestReact
               placeholder="Ville"
-              data={Categories}
+              data={villes}
             ></AutosuggestReact>
           </form>
         </div>
@@ -62,7 +87,7 @@ const SearchBar = () => {
           <form>
             <AutosuggestReact
               placeholder="Zone"
-              data={Categories}
+              data={zones}
             ></AutosuggestReact>
           </form>
         </div>
