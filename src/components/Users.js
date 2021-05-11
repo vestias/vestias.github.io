@@ -35,17 +35,17 @@ class Admin extends React.Component {
           actions: <div className="action_div">
              <Link
                     className="nav-link Modifier"
-                    to="Accueil"
+                    to="#"
                     style={{ textDecoration: "none" }}
                   >
-                    <span href="Accueil">Modifier</span>
+                    <span href="#">Modifier</span>
                   </Link>
                   <Link
                     className="nav-link Supprimer"
-                    to="Accueil"
+                    to="#"
                     style={{ textDecoration: "none" }}
                   >
-                    <span href="Accueil">Supprimer</span>
+                    <span href="#">Supprimer</span>
                   </Link>
           </div>,
         }, {
