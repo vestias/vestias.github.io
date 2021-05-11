@@ -70,6 +70,19 @@ position: relative;
   text-decoration: none;
 }
 
+.container-nav_links span{
+
+  display: block;
+  color: white !important;
+  font-size: 14px;
+  border-right: 1px solid #0d1f3d;
+  border-left: 1px solid #233e6e;
+  padding-top: 5px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  text-decoration: none;
+}
+
 .dropdown_items a{
 
   color: black !important;

@@ -21,7 +21,6 @@ const Navbar = () => {
           </a>
         </div>
         <div>
-          {" "}
           <a className="navbar-brand font-weight-bold" href="Accueil">
             <img
               className="img_2"
@@ -74,8 +73,8 @@ const Navbar = () => {
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item" itemprop="name">
                 <Link to="Accueil" style={{ textDecoration: "none" }}>
-                  <a className="nav-link">Accueil</a>{" "}
-                </Link>
+              <span href="Accueil">Accueil</span>
+            </Link>
               </li>
               <li className="nav-item" itemprop="name">
                 <Link to="Decouvert" style={{ textDecoration: "none" }}>
