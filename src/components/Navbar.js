@@ -11,18 +11,14 @@ const Navbar = () => {
       <p></p>
       <div className="container-nav">
         <div>
-          <Link
-            className="nav-link"
-            to="Accueil"
-            style={{ textDecoration: "none" }}
-          >
+          <a className="navbar-brand font-weight-bold">
             <img
               className="img_1"
               alt="alt"
               style={{ height: 80, width: 240 }}
               src="https://www.immoaction.ca/images/trouvez-facilement.png"
             />
-          </Link>
+          </a>
         </div>
         <div>
           <Link
@@ -47,7 +43,8 @@ const Navbar = () => {
             type="button"
             style={{ textDecoration: "none" }}
           >
-            Mon compte
+                       Mon compte
+
           </Link>
           <div className="icon">
             <SocialIcon
