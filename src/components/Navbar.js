@@ -72,14 +72,18 @@ const Navbar = () => {
           <div class="collapse navbar-collapse ddd" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item" itemprop="name">
-                <Link to="Accueil" style={{ textDecoration: "none" }}>
-              <span href="Accueil">Accueil</span>
-            </Link>
+                <Link
+                  className="nav-link"
+                  to="Accueil"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span href="Accueil">Accueil</span>
+                </Link>
               </li>
               <li className="nav-item" itemprop="name">
-                <Link to="Decouvert" style={{ textDecoration: "none" }}>
-                  <a className="nav-link">Logement</a>{" "}
-                </Link>
+                <a className="nav-link" href="Decouvert" itemprop="url">
+                  Logement
+                </a>
               </li>
               <li className="nav-item" itemprop="name">
                 <a className="nav-link" href="Contact" itemprop="url">
