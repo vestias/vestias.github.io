@@ -64,7 +64,7 @@ class multi_slider extends React.Component {
           <div className="slide_top">
             <Link to="Fiche" style={{ textDecoration: "none" }}>
               <span href="fiche">{value.type}</span>
-            </Link>{" "}
+            </Link>
             <span>{value.price}</span>
           </div>
           <div className="slide_bottom">

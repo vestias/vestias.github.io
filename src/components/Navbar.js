@@ -9,7 +9,7 @@ const Navbar = () => {
       <p></p>
       <div className="container-nav">
         <div>
-          <a className="navbar-brand font-weight-bold" href="/Accueil">
+          <a className="navbar-brand font-weight-bold" href="Accueil">
             <img
               className="img_1"
               alt="alt"
@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
         <div>
           {" "}
-          <a className="navbar-brand font-weight-bold" href="/Accueil">
+          <a className="navbar-brand font-weight-bold" href="Accueil">
             <img
               className="img_2"
               alt="alt"
@@ -71,27 +71,27 @@ const Navbar = () => {
           <div class="collapse navbar-collapse ddd" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="/Accueil" itemprop="url">
+                <a className="nav-link" href="Accueil" itemprop="url">
                   Accueil
                 </a>
               </li>
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="/Decouvert" itemprop="url">
+                <a className="nav-link" href="Decouvert" itemprop="url">
                   Logement
                 </a>
               </li>
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="/Contact" itemprop="url">
+                <a className="nav-link" href="Contact" itemprop="url">
                   Contact
                 </a>
               </li>
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="/Contact" itemprop="url">
+                <a className="nav-link" href="Contact" itemprop="url">
                   Conseils Achats
                 </a>
               </li>
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="/Contact" itemprop="url">
+                <a className="nav-link" href="Contact" itemprop="url">
                   Financement
                 </a>
               </li>
