@@ -1,6 +1,7 @@
 import React from "react";
 import "./users.css";
 import { MDBDataTable } from "mdbreact";
+import { Link } from "react-router-dom";
 
 class Admin extends React.Component {
   render() {
@@ -31,53 +32,155 @@ class Admin extends React.Component {
           image:
           <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
           ,
-          actions: "Modifier Supprimer",
+          actions:  <div className="action_div">
+          <Link
+                 className="nav-link Modifier"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Modifier</span>
+               </Link>
+               <Link
+                 className="nav-link Supprimer"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Supprimer</span>
+               </Link>
+       </div>,
         },
         {
           title: "Appartement À Vendre à Nejma Tanger",
           image:
           <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
           ,
-          actions: "Modifier Supprimer",
+          actions: <div className="action_div">
+          <Link
+                 className="nav-link Modifier"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Modifier</span>
+               </Link>
+               <Link
+                 className="nav-link Supprimer"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Supprimer</span>
+               </Link>
+       </div>
         },
         {
           title: "Appartement À Vendre à Nejma Tanger",
           image:
           <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
           ,
-          actions: "Modifier Supprimer",
+          actions: <div className="action_div">
+          <Link
+                 className="nav-link Modifier"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Modifier</span>
+               </Link>
+               <Link
+                 className="nav-link Supprimer"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Supprimer</span>
+               </Link>
+       </div>
         },
         {
           title: "Appartement À Vendre à Nejma Tanger",
           image:
           <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
           ,
-          actions: "Modifier Supprimer",
-        },{
-          title: "Appartement À Vendre à Nejma Tanger",
-          image:
-          <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
-          ,
-          actions: "Modifier Supprimer",
-        },{
-          title: "Appartement À Vendre à Nejma Tanger",
-          image:
-          <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
-          ,
-          actions: "Modifier Supprimer",
-        },{
-          title: "Appartement À Vendre à Nejma Tanger",
-          image:
-          <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
-          ,
-          actions: "Modifier Supprimer",
-        },{
-          title: "Appartement À Vendre à Nejma Tanger",
-          image:
-          <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
-          ,
-          actions: "Modifier Supprimer",
+          actions: <div className="action_div">
+          <Link
+                 className="nav-link Modifier"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Modifier</span>
+               </Link>
+               <Link
+                 className="nav-link Supprimer"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Supprimer</span>
+               </Link>
+       </div>
         },
+        {
+          title: "Appartement À Vendre à Nejma Tanger",
+          image:
+          <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
+          ,
+          actions: <div className="action_div">
+          <Link
+                 className="nav-link Modifier"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Modifier</span>
+               </Link>
+               <Link
+                 className="nav-link Supprimer"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Supprimer</span>
+               </Link>
+       </div>
+        },
+        {
+          title: "Appartement À Vendre à Nejma Tanger",
+          image:
+          <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
+          ,
+          actions: <div className="action_div">
+          <Link
+                 className="nav-link Modifier"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Modifier</span>
+               </Link>
+               <Link
+                 className="nav-link Supprimer"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Supprimer</span>
+               </Link>
+       </div>
+        },
+        {
+          title: "Appartement À Vendre à Nejma Tanger",
+          image:
+          <a href="https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg">https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg</a>
+          ,
+          actions: <div className="action_div">
+          <Link
+                 className="nav-link Modifier"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Modifier</span>
+               </Link>
+               <Link
+                 className="nav-link Supprimer"
+                 to="#"
+                 style={{ textDecoration: "none" }}
+               >
+                 <span href="#">Supprimer</span>
+               </Link>
+       </div>
+        }
       ],
     };
     
