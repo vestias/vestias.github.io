@@ -81,24 +81,40 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="Decouvert" itemprop="url">
-                  Logement
-                </a>
+              <Link
+                  className="nav-link"
+                  to="Decouvert"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span href="Decouvert">Logement</span>
+                </Link>
               </li>
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="Contact" itemprop="url">
-                  Contact
-                </a>
+              <Link
+                  className="nav-link"
+                  to="Contact"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span href="Contact">Contact</span>
+                </Link>
               </li>
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="Contact" itemprop="url">
-                  Conseils Achats
-                </a>
+              <Link
+                  className="nav-link"
+                  to="Contact"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span href="Contact">Conseils Achats</span>
+                </Link>
               </li>
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="Contact" itemprop="url">
-                  Financement
-                </a>
+              <Link
+                  className="nav-link"
+                  to="Contact"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span href="Contact">Financement</span>
+                </Link>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -115,15 +131,27 @@ const Navbar = () => {
                   class="dropdown-menu dropdown_items"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a class="dropdown-item" href="/users">
-                    Utilisateur
-                  </a>
-                  <a class="dropdown-item" href="/annonces">
-                    Annonces
-                  </a>
-                  <a class="dropdown-item" href="/slides">
-                    slides
-                  </a>
+                   <Link
+                  className="nav-link"
+                  to="users"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span href="users">Utilisateur</span>
+                </Link>
+                <Link
+                  className="nav-link"
+                  to="annonces"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span href="annonces">Annonces</span>
+                </Link>
+                <Link
+                  className="nav-link"
+                  to="slides"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span href="slides">slides</span>
+                </Link>
                 </div>
               </li>
             </ul>
