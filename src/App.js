@@ -72,9 +72,9 @@ function App() {
             <h3>Suivez-nous sur</h3>
             <div class="icons-footer">
               <div class="ts"><SocialIcon style={{ height: 40, width: 40 }} bgColor="#fff" fgcolor="#1a789a" url="https://twitter.com/" /></div>
-              <div><SocialIcon bgColor="#fff" style={{ height: 40, width: 40 }} fgcolor="#1a789a" url="https://facebook.com" /></div>
-              <div><SocialIcon bgColor="#fff" style={{ height: 40, width: 40 }} fgcolor="#1a789a"  url="https://instagram.com" /></div>
-              <div><SocialIcon bgColor="#fff" style={{ height: 40, width: 40 }} fgcolor="#1a789a"  url="https://youtube.com" /></div>
+              <div><SocialIcon target="_blank" bgColor="#fff" style={{ height: 40, width: 40 }} fgcolor="#1a789a" url="https://facebook.com" /></div>
+              <div><SocialIcon target="_blank" bgColor="#fff" style={{ height: 40, width: 40 }} fgcolor="#1a789a"  url="https://instagram.com" /></div>
+              <div><SocialIcon target="_blank" bgColor="#fff" style={{ height: 40, width: 40 }} fgcolor="#1a789a"  url="https://youtube.com" /></div>
             </div>
             <img  alt="alt" src="https://www.immobilio.ma/wp-content/uploads/2018/09/Logo-01.png"/>
            

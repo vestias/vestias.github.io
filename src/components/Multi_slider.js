@@ -37,16 +37,45 @@ class multi_slider extends React.Component {
         lits: "3",
         bains: "2",
       },
+      {
+        type: "A VENDRE",
+        price: "2.000.000 MAD",
+        surface: "172",
+        lits: "3",
+        bains: "2",
+      },
+      {
+        type: "A VENDRE",
+        price: "2.000.000 MAD",
+        surface: "172",
+        lits: "3",
+        bains: "2",
+      },
+      {
+        type: "A VENDRE",
+        price: "2.000.000 MAD",
+        surface: "172",
+        lits: "3",
+        bains: "2",
+      },
+      {
+        type: "A VENDRE",
+        price: "2.000.000 MAD",
+        surface: "172",
+        lits: "3",
+        bains: "2",
+      }
     ];
 
     var settings = {
-      dots: false,
+      dots: true,
 
       accessibility: true,
-      adaptiveHeight: true,
+      infinite: true,
       centerMode: true,
       className: "sliider",
       slidesToShow: 3,
+      slidesToScroll: 1,
       draggable: true,
       centerMode: false,
       arrows: false,
