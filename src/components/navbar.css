@@ -72,10 +72,15 @@ position: relative;
 
 .dropdown_items a{
 
-  color: black !important;
+  border-bottom: 1px solid #0d1f3d;
+  font-size: 13px;
 
 }
 
 .ddd{
   padding-left: 20% !important;
+}
+
+.dropdown-menu{
+  background-color: #19315b !important;
 }

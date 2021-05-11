@@ -6,6 +6,7 @@ const Ajouter_annonces = () => {
   return (
     <div className="add_div">
       <div className="a3">
+        <h1>Ajouter une annonces </h1>
         <form>
           <div className="line">
             <p>titre : </p>
