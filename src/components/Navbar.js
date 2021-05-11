@@ -3,9 +3,11 @@ import "./navbar.css";
 
 import { SocialIcon } from "react-social-icons";
 
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
- <header>
+    <header>
       <p></p>
       <div className="container-nav">
         <div>
@@ -71,14 +73,14 @@ const Navbar = () => {
           <div class="collapse navbar-collapse ddd" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="Accueil" itemprop="url">
-                  Accueil
-                </a>
+                <Link to="Accueil" style={{ textDecoration: "none" }}>
+                  <a className="nav-link">Accueil</a>{" "}
+                </Link>
               </li>
               <li className="nav-item" itemprop="name">
-                <a className="nav-link" href="Decouvert" itemprop="url">
-                  Logement
-                </a>
+                <Link to="Decouvert" style={{ textDecoration: "none" }}>
+                  <a className="nav-link">Logement</a>{" "}
+                </Link>
               </li>
               <li className="nav-item" itemprop="name">
                 <a className="nav-link" href="Contact" itemprop="url">
