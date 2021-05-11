@@ -37,9 +37,164 @@ const villes = [
     name: "Marrakesh",
   },
   {
+    name: "Salé",
+  },
+  {
+    name: "Meknes",
+  },
+  {
     name: "Rabat",
+  },
+  {
+    name: "Oujda",
+  },
+  {
+    name: "Kenitra",
+  },
+  {
+    name: "Agadir",
+  },
+  {
+    name: "Tetouan",
+  },
+  {
+    name: "Temara",
+  },
+  {
+    name: "Safi",
+  },
+  {
+    name: "Mohammedia",
+  },
+  {
+    name: "	Khouribga",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
+  },
+  {
+    name: "El Jadida",
   }
-  
 ];
 
 const zones = [

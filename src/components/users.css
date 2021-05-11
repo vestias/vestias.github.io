@@ -14,3 +14,14 @@
     margin-right: 10%;
   
   }
+
+
+  .action_div{
+      display: flex;
+      justify-content:center;
+  }
+
+
+.action_div .Supprimer{
+    color: red;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./users.css";
 import { MDBDataTable } from "mdbreact";
+import { Link } from "react-router-dom";
 
 class Admin extends React.Component {
   render() {
@@ -31,77 +32,231 @@ class Admin extends React.Component {
         {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
+        }, {
           id: "645",
           pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
-          id: "645",
-          pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
-          id: "645",
-          pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
-        },
-        {
-          id: "645",
-          pseudo: "Utilisateur",
-          actions: "Modifier Supprimer",
+          actions: <div className="action_div">
+             <Link
+                    className="nav-link Modifier"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Modifier</span>
+                  </Link>
+                  <Link
+                    className="nav-link Supprimer"
+                    to="Accueil"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Accueil">Supprimer</span>
+                  </Link>
+          </div>,
         },
       ],
     };
