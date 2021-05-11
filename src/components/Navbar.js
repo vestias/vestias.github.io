@@ -11,31 +11,44 @@ const Navbar = () => {
       <p></p>
       <div className="container-nav">
         <div>
-          <a className="navbar-brand font-weight-bold" href="Accueil">
+          <Link
+            className="nav-link"
+            to="Accueil"
+            style={{ textDecoration: "none" }}
+          >
             <img
               className="img_1"
               alt="alt"
               style={{ height: 80, width: 240 }}
               src="https://www.immoaction.ca/images/trouvez-facilement.png"
             />
-          </a>
+          </Link>
         </div>
         <div>
-          <a className="navbar-brand font-weight-bold" href="Accueil">
+          <Link
+            className="nav-link"
+            to="Accueil"
+            style={{ textDecoration: "none" }}
+          >
             <img
               className="img_2"
               alt="alt"
               style={{ height: 115, width: 350 }}
               src="https://www.immoaction.ca/images/immoaction.jpg"
-            />
-          </a>
+            />{" "}
+          </Link>
         </div>
 
         <div className="butt_acc">
           <p class="date_p">10 mai 2021</p>
-          <a type="button" href="/admin" class="btn_c btn btn-primary">
+          <Link
+            className="nav-link btn_c btn btn-primary"
+            to="users"
+            type="button"
+            style={{ textDecoration: "none" }}
+          >
             Mon compte
-          </a>
+          </Link>
           <div className="icon">
             <SocialIcon
               bgColor=""
@@ -81,7 +94,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item" itemprop="name">
-              <Link
+                <Link
                   className="nav-link"
                   to="Decouvert"
                   style={{ textDecoration: "none" }}
@@ -90,7 +103,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item" itemprop="name">
-              <Link
+                <Link
                   className="nav-link"
                   to="Contact"
                   style={{ textDecoration: "none" }}
@@ -99,7 +112,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item" itemprop="name">
-              <Link
+                <Link
                   className="nav-link"
                   to="Contact"
                   style={{ textDecoration: "none" }}
@@ -108,7 +121,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item" itemprop="name">
-              <Link
+                <Link
                   className="nav-link"
                   to="Contact"
                   style={{ textDecoration: "none" }}
@@ -131,34 +144,34 @@ const Navbar = () => {
                   class="dropdown-menu dropdown_items"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                   <Link
-                  className="nav-link"
-                  to="users"
-                  style={{ textDecoration: "none" }}
-                >
-                  <span href="users">Utilisateur</span>
-                </Link>
-                <Link
-                  className="nav-link"
-                  to="annonces"
-                  style={{ textDecoration: "none" }}
-                >
-                  <span href="annonces">Annonces</span>
-                </Link>
-                <Link
-                  className="nav-link"
-                  to="slides"
-                  style={{ textDecoration: "none" }}
-                >
-                  <span href="slides">slides</span>
-                </Link>
-                <Link
-                  className="nav-link"
-                  to="Ajouter_annonces"
-                  style={{ textDecoration: "none" }}
-                >
-                  <span href="Ajouter_annonces">Ajouter Annonce</span>
-                </Link>
+                  <Link
+                    className="nav-link"
+                    to="users"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="users">Utilisateur</span>
+                  </Link>
+                  <Link
+                    className="nav-link"
+                    to="annonces"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="annonces">Annonces</span>
+                  </Link>
+                  <Link
+                    className="nav-link"
+                    to="slides"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="slides">slides</span>
+                  </Link>
+                  <Link
+                    className="nav-link"
+                    to="Ajouter_annonces"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span href="Ajouter_annonces">Ajouter Annonce</span>
+                  </Link>
                 </div>
               </li>
             </ul>
