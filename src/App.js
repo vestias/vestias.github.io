@@ -1,7 +1,7 @@
 import './App.css';
 
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter ,HashRouter, Route, Switch } from 'react-router-dom';
  
 import Accueil from './components/Accueil';
 import Decouvert from './components/Decouvert';
@@ -34,7 +34,7 @@ function App() {
 
       
       <header className="App-header">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <div>
           <Navbar />
             <Switch>
@@ -51,7 +51,7 @@ function App() {
             <Route component={Error}/>
            </Switch>
         </div> 
-      </BrowserRouter>
+      </HashRouter>
       </header>
       <footer>
         <div class="footer-links-container">
