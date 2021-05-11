@@ -1,11 +1,11 @@
 .a3{
   padding-top: 30px;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left:20%;
+  padding-right: 20%;
 
 }
 
-.a3form{
+.a3 form{
 	width: 100%;
 	padding: 20px;
 	margin : 30px auto;
@@ -14,7 +14,14 @@
 .a3 form p{
 	color:#000;
 	font-size: 15px;
-    text-align: left    ;
+  text-align: left;   
+  align-self: center; 
+  width: 150px;
+  padding:0px ;
+  margin-top: 10px;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  position:absolute;
 }
 .a3 form input{
 	width: 100%;
@@ -24,6 +31,8 @@
 	border: 1px solid gray;
 	border-radius: 3px;
 	font-size: 14px;
+
+  margin-left: 150px;
 }
 .a3 form input[type="submit"]{
 	margin-top: 30px;
@@ -40,10 +49,4 @@
 .line{
   display: flex;
   justify-content: space-between;
-}
-
-.line p{
-  width: 150px;
-  padding:0px ;
-  margin-top: 10px;
 }

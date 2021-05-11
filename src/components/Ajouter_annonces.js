@@ -33,15 +33,15 @@ const Ajouter_annonces = () => {
           </div>
           <div className="line">
           <p>gallery :</p>
-          <input type="text" name="Email" />
-          </div>
+          <input class="form-control" type="file" id="formFileMultiple" multiple />
+                    </div>
          
           
           
           
           
           
-          <input type="submit" value="Envoyer" />
+          <input type="submit" value="Ajouter" />
         </form>
       </div>
     </div>
