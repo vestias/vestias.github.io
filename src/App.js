@@ -33,7 +33,7 @@ function App() {
 
       
       <header className="App-header">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
           <Navbar />
             <Switch>
