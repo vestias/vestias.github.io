@@ -152,6 +152,13 @@ const Navbar = () => {
                 >
                   <span href="slides">slides</span>
                 </Link>
+                <Link
+                  className="nav-link"
+                  to="Ajouter_annonces"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span href="Ajouter_annonces">Ajouter Annonce</span>
+                </Link>
                 </div>
               </li>
             </ul>
