@@ -5,41 +5,18 @@
 .search_Container {
   background-color: #f0f0f0;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 2fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
+  grid-template-columns: repeat( auto-fit, minmax(150px, 2fr));
+  gap: 5px 5px;
   margin-left: 10%;
   margin-right: 10%;
   padding: 8px 15px;
-  grid-template-areas:
-    "area1 area2 area3 area4"
-    "area5 area5 area5 area5";
 }
-
-.area1 {
-  grid-area: area1;
-  padding: 5px;
+.area3{
+  padding: 0px 10px;
 }
-
-.area2 {
-  grid-area: area2;
-  padding: 5px;
+.area4{
+  padding: 0px 10px;
 }
-
-.area3 {
-  grid-area: area3;
-  padding: 5px;
-}
-
-.area4 {
-  grid-area: area4;
-  padding: 5px;
-}
-
-.area5 {
-  grid-area: area5;
-}
-
 .resetB {
   border-radius: 3px;
   text-transform: uppercase;
@@ -153,4 +130,10 @@
 
 .react-autosuggest__suggestion--highlighted {
   background-color: #ddd;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  /* For phone : */
 }

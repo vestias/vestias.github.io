@@ -84,3 +84,34 @@ position: relative;
 .dropdown-menu{
   background-color: #19315b !important;
 }
+
+@media only screen and (min-width: 600) {
+  /* For desktop : */
+  .img_1{
+    display:flex;
+  }
+  .img_2{
+    width: 120px !important;
+    height: 40px !important;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* For phone : */
+  .img_1{
+    display: none;
+  }
+  .img_2{
+    width: 120px !important;
+    height: 40px !important;
+    padding-left: 0;
+  }
+
+  .date_p{
+    display: none !important;
+  }
+  .icon{
+    display: none !important;
+  }
+}
