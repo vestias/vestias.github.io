@@ -3,6 +3,7 @@ import "./SearchBar.css";
 
 import { Link } from "react-router-dom";
 import AutosuggestReact from "./AutosuggestReact.js";
+import { ContactSupportOutlined } from "@material-ui/icons";
 
 const types = [
   {
@@ -67,7 +68,7 @@ const villes = [
     name: "Mohammedia",
   },
   {
-    name: "	Khouribga",
+    name: "Khouribga",
   },
   {
     name: "El Jadida",
@@ -76,17 +77,17 @@ const villes = [
 
 const zones = [
   {
-    name: "	Casablanca-Settat",
+    name: "Casablanca-Settat",
   },
   {
     name: "Fès-Meknès",
   },
   {
-    name: "	Tanger-Tetouan-Al Hoceima",
+    name: "Tanger-Tetouan-Al Hoceima",
   },
   ,
   {
-    name: "	Marrakesh-Safi",
+    name: "Marrakesh-Safi",
   },
   {
     name: "Rabat-Salé-Kénitra",
@@ -94,19 +95,33 @@ const zones = [
   
 ];
 
-const SearchBar = () => {
+
+class SearchBar extends React.Component {
+
+
+  default="/Decouvert?ville=all&&zone=all"
+
+  handleClick = () => {
+
+    try{
+      const ville = document.getElementsByClassName("react-autosuggest__input")[0].value;
+      const zone = document.getElementsByClassName("react-autosuggest__input")[1].value;
+      return "/Decouvert?ville="+ville+"&&zone="+zone+"";
+    }
+    catch(error){
+      return "/Decouvert?ville=all&&zone=all";
+
+    }
+    
+  };
+
+  render() {
+
   return (
     <div className="searchBox">
-      <h1 className="title5">Trouvez une propriété à vendre</h1>
+      <h1 className="title5" onClick={this.handleClick}>Trouvez une propriété à vendre</h1>
       <div className="search_Container">
-        <div className="area1">
-          <button class="resetB">réinitialiser</button>
-        </div>
-        <div className="area2">
-          <Link to="/Decouvert?type=shirt&Categorie=blue">
-            <button className="SearchB">Recherche</button>
-          </Link>
-        </div>
+        
         <div className="area3">
           <form>
             <AutosuggestReact
@@ -123,11 +138,21 @@ const SearchBar = () => {
             ></AutosuggestReact>
           </form>
         </div>
+        <div className="area2">
+          <Link to={this.handleClick}>
+            <button className="SearchB">Rechercher</button>
+          </Link>
+        </div>
+        <div className="area1">
+          <Link  to={this.default}  params={{ ville: "all",zone:"all" }}>
+            <button className="resetB">réinitialiser</button>
+          </Link>
+        </div>
         
       </div>
     </div>
   );
-};
+  }};
 
 /*
 const SearchBar = () => {

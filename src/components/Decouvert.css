@@ -27,3 +27,17 @@ body {
 .pagination a:hover:not(.active) {
   background-color: #ddd;
 }
+.carousel-item img{
+  object-fit: cover;
+  width: 100%;
+}
+
+
+/* media queries */
+
+@media(max-width: 900px) {
+  .carousel-item img{
+    max-height: 200px;
+  }
+  
+}

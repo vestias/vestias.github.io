@@ -38,7 +38,7 @@ import Autosuggest from 'react-autosuggest';
   
     onChange = (event, { newValue, method }) => {
       this.setState({
-        value: newValue
+        value: newValue,
       });
     };
     
@@ -72,6 +72,7 @@ import Autosuggest from 'react-autosuggest';
       const { value, suggestions } = this.state;
       const inputProps = {
         placeholder: this.placeholder,
+        name: this.placeholder,
         value,
         onChange: this.onChange
       };

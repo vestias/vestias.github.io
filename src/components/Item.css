@@ -10,14 +10,11 @@
 .grid-container {
   border: 1px solid #ccc;
   padding: 1px;
-  display: grid;
-  margin-left: 15%;
-  margin-right: 15%;
-  grid-template-columns: 350px 1fr;
-  grid-template-rows: 1fr;
-  margin-top: 20px;
-  padding: 0px;
-  grid-template-areas: "c1 c2";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  margin:20px auto;
   border-radius: 3px;
 }
 .grid-container:hover {
@@ -26,12 +23,9 @@
 .grid-container:hover .detail_button {
   visibility: visible;
 }
-.c1 {
-  grid-area: c1;
-}
+
 
 .c2 {
-  grid-area: c2;
   padding: 10px;
 }
 
@@ -78,6 +72,58 @@ p.item_text {
   visibility: hidden;
 }
 
-.c2 button:hover {
-  color: black;
+.hidden_price span{
+  display: none;
+}
+
+/* media queries */
+
+@media (max-width:900px){
+  .grid-container {
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+  }
+  .c2{
+    display: flex;
+    flex-direction: column;
+  }
+  .title-price {
+    display: flex;
+  }
+  .title-price span{
+    display: none;
+  }
+  .hidden_price {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .hidden_price span{
+    display: block;
+    position: relative;
+    left: 20px;
+    font-size: 17px;
+  }
+   p.item_title {
+    padding: 10px 0;
+    font-size: 18.5px ;
+    width: 95%;
+    margin : 0 auto;
+  }
+  p.item_text {
+    padding: 5px;
+    width: 95%;
+    margin : 0 auto 15px auto;
+    text-align: justify;
+  }
+  .grid-container:hover {
+    border: 1px solid #ccc;
+  }
+  .grid-container .detail_button {
+    visibility:initial;
+  }
 }

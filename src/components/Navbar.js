@@ -38,13 +38,37 @@ class Navbar extends React.Component {
     };
   }
 
+  toggleNav = function(e){
+    let x = document.querySelector('.ddd');
+    if(x.classList.contains("active")){
+      x.className="ddd";
+    }else{
+      x.classList.add("active");
+    }
+  }
+
+  handleDropDownMenu = ()=>{
+    let x = document.querySelector('.hover_menu');
+    if(x.classList.contains("active")){
+      x.classList.remove("active");
+    }else{
+      x.classList.add("active");
+    }
+  }
   render() {
     return (
       <header>
-        <p></p>
         <div className="container-nav">
+         <div className="navbar_toggler">
+        
+            <div onClick={this.toggleNav}  class="burger-icon ">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+         </div>
           <div>
-            <a className="navbar-brand font-weight-bold">
+            <a className="ssss navbar-brand font-weight-bold">
               <img
                 className="img_1"
                 alt="alt"
@@ -97,94 +121,71 @@ class Navbar extends React.Component {
               />
             </div>
           </div>
+        
         </div>
-        <div>
-          <nav class="container-nav_links navbar navbar-expand-lg navbar-light ">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarTogglerDemo03"
-              aria-controls="navbarTogglerDemo03"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand " href="#"></a>
-
-            <div class="collapse navbar-collapse ddd" id="navbarTogglerDemo03">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li className="nav-item" itemprop="name" >
-                <Link
-                    to="Accueil"
-                    style={{ textDecoration: "none" }}
-                  >
-                <Icon  size={20} icon={home} />
-                  </Link>
-                </li>
-                <li className="nav-item" itemprop="name">
+       
+        <nav class="container-nav_links">
+            
+            <div class="ddd">
+              <ul class="">
+               
+                <li className="" itemprop="name">
                   <Link
-                    className="nav-link"
+                    className=""
                     to="Accueil"
                     style={{ textDecoration: "none" }}
                   >
                     <span href="Accueil">Accueil</span>
                   </Link>
                 </li>
-                <li className="nav-item" itemprop="name">
+                <li className="" itemprop="name">
                   <Link
-                    className="nav-link"
+                    className=""
                     to="Decouvert"
                     style={{ textDecoration: "none" }}
                   >
                     <span href="Decouvert">Logement</span>
                   </Link>
                 </li>
-                <li className="nav-item" itemprop="name">
+                <li className="" >
                   <Link
-                    className="nav-link"
+                    className=""
                     to="Contact"
                     style={{ textDecoration: "none" }}
                   >
                     <span href="Contact">Contact</span>
                   </Link>
                 </li>
-                <li className="nav-item" itemprop="name">
+                <li className="">
                   <Link
-                    className="nav-link"
+                    className=""
                     to="Contact"
                     style={{ textDecoration: "none" }}
                   >
                     <span href="Contact">Conseils Achats</span>
                   </Link>
                 </li>
-                <li className="nav-item" itemprop="name">
+                <li className="" >
                   <Link
-                    className="nav-link"
+                    className=""
                     to="Contact"
                     style={{ textDecoration: "none" }}
                   >
                     <span href="Contact">Financement</span>
                   </Link>
                 </li>
-                <li class="nav-item dropdown">
+                <li onClick={this.handleDropDownMenu} class="nav-item hover-menu-nav-link">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link"
                     href="#"
-                    id="navbarDropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
                   >
                     Mon compte
                   </a>
                   <div
-                    class="dropdown-menu dropdown_items"
-                    aria-labelledby="navbarDropdownMenuLink"
+                    class="hover_menu"
                   >
                     <Link
-                      className="nav-link"
+                      className="nav-link "
                       to="users"
                       style={{ textDecoration: "none" }}
                     >
@@ -216,7 +217,7 @@ class Navbar extends React.Component {
               </ul>
             </div>
           </nav>
-        </div>
+
       </header>
     );
   }

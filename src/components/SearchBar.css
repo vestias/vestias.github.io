@@ -4,18 +4,15 @@
 
 .search_Container {
   background-color: #f0f0f0;
-  display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(150px, 2fr));
-  gap: 5px 5px;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 10px;
 }
-.area3{
-  padding: 0px 10px;
-}
-.area4{
-  padding: 0px 10px;
+.area3,.area4{
+  width: 30%;
 }
 .resetB {
   border-radius: 3px;
@@ -26,14 +23,15 @@
   cursor: pointer;
   background-color: lightsalmon; /* Green */
   color: white;
-  width: 100%;
+  width: 95%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
   border: 1px solid lightsalmon;
+  margin: 0 10px;
+  
 }
 
 .SearchB {
@@ -48,11 +46,12 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 10px 4px 2px;
+  margin: 4px 10px 4px 15px;
   transition-duration: 0.4s;
   background-color: #f0f0f0;
   border: 1px solid #1a789a;
-  width: 100%;
+  width: 95%;
+
 }
 .SearchB:hover {
   background-color: #1a789a;
@@ -134,6 +133,29 @@
 
 
 
-@media only screen and (max-width: 600px) {
-  /* For phone : */
+@media only screen and (max-width: 900px) {
+  
+  .search_Container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 10px 0;
+  }
+  .area3 , .area4{
+    padding-right: 20px;
+    width: 100%;
+  }
+  .searchBox {
+    width: 80%;
+    padding:40px 0 20px 0;
+    margin : 15px auto 50px auto;
+  }
+  .area1,.area2{
+    width: 100%;
+    margin:5px auto;
+    
+  }
+  .SearchB,.resetB{
+    margin:0;
+  }
 }

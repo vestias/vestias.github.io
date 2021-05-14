@@ -26,9 +26,13 @@ class Item extends React.Component {
             <span>{this.props.price} DH</span>
           </div>
           <p className="item_text">{this.props.description}</p>
+          <div className="hidden_price" >
+          <span>{this.props.price} DH</span>
           <Link to="Fiche">
           <button className="detail_button">Details</button>
           </Link>
+          </div>
+         
         </div>
       </div>
     </div>

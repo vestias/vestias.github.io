@@ -4,42 +4,48 @@ import "./Decouvert.css";
 import Slider from "./Slider.js";
 import Item from "./Item";
 import SearchBar from "./SearchBar.js";
+import { useEffect, useState }from 'react';
 
 
 
-const Decouvert = () => {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const type = urlParams.get("type");
-  console.log(type);
-  const Categorie = urlParams.get("Categorie");
-  console.log(Categorie);
+function MyComponent(props) {
+   // The API URL.
+
+   var APIurl = ""
+ if(props.ville!=null && props.zone!=null)
+ {
+  APIurl = 'http://localhost:8080/Annonces?ville='+props.ville+'&&zone='+props.zone+'';
+
+ }
+ else
+ {
+  APIurl = "http://localhost:8080/Annonces?ville=all&&zone=all";
+
+ }
+
+ // useState.
+  const [annonces, setUsers] = useState([]);
+ // useEffect.
+  useEffect(()=>{
+   fetch(APIurl)
+    .then(res => res.json())
+    .then(data => setUsers(data));
+ },[]);
+
+ return(
+  <>
+   {annonces.map(annonce => (
+ <Item
+ title={annonce.title}
+ price={annonce.price}
+ description={annonce.description}
+></Item>
+   ))}
+  
+  </>
+  )}
 
   var array = [
-    { 
-      title: "Appartement À Vendre à Nejma Tanger",
-      price: "20.000.000",
-      description:
-        " Appartement À Vendre à Tanger Particulier met en vente un joli appartement meublé au premier étage d’une résidence récente (moins de 10 ans) stratégiquement situé au quartier Nejma à Tanger. – Superficie : 106 m². – Composition : Une entrée, un salon marocain avec grand balcon, 2 chambres à coucher avec rangements et",
-    },
-    {
-      title: "Appartement À Vendre à Nejma Tanger",
-      price: "45.000.000",
-      description:
-        " Appartement À Vendre à Tanger Particulier met en vente un joli appartement meublé au premier étage d’une résidence récente (moins de 10 ans) stratégiquement situé au quartier Nejma à Tanger. – Superficie : 106 m². – Composition : Une entrée, un salon marocain avec grand balcon, 2 chambres à coucher avec rangements et",
-    },
-    {
-      title: "Appartement À Vendre à Nejma Tanger",
-      price: "12.000.000",
-      description:
-        " Appartement À Vendre à Tanger Particulier met en vente un joli appartement meublé au premier étage d’une résidence récente (moins de 10 ans) stratégiquement situé au quartier Nejma à Tanger. – Superficie : 106 m². – Composition : Une entrée, un salon marocain avec grand balcon, 2 chambres à coucher avec rangements et",
-    },
-    {
-      title: "Appartement À Vendre à Nejma Tanger",
-      price: "25.000.000",
-      description:
-        " Appartement À Vendre à Tanger Particulier met en vente un joli appartement meublé au premier étage d’une résidence récente (moins de 10 ans) stratégiquement situé au quartier Nejma à Tanger. – Superficie : 106 m². – Composition : Une entrée, un salon marocain avec grand balcon, 2 chambres à coucher avec rangements et",
-    },
     {
       title: "Appartement À Vendre à Nejma Tanger",
       price: "17.000.000",
@@ -48,8 +54,8 @@ const Decouvert = () => {
     },
   ];
   const items = [];
-
   for (const [index, value] of array.entries()) {
+
     items.push(
       <Item
       title={value.title}
@@ -78,7 +84,28 @@ const Decouvert = () => {
   ];
   
 
-  return (
+  class Decouvert extends React.Component {
+   
+     ville = "all";
+     zone  = "all";
+    constructor(props) {
+      
+      super(props);
+      const params = new URLSearchParams(this.props.location.search); 
+      this.ville = params.get('ville');
+      this.zone = params.get('zone');
+    
+    }
+   
+    componentDidUpdate() {
+      const params = new URLSearchParams(this.props.location.search); 
+      this.ville = params.get('ville');
+      this.zone = params.get('zone');
+      window.location.reload(false);
+      
+    }
+    render() {
+   return (
     <div>
       <h1></h1>
       <div>
@@ -88,6 +115,11 @@ const Decouvert = () => {
 
       <h1></h1>
       <div>
+
+
+      <MyComponent ville={this.ville} zone={this.zone} ></MyComponent>
+
+
       {items}
 
         <div className="pagination">
@@ -105,6 +137,6 @@ const Decouvert = () => {
       </div>
     </div>
   );
-};
+}};
 
 export default Decouvert;
