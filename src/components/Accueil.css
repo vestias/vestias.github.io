@@ -96,16 +96,3 @@ width: 100%;
 	opacity: 1;
 	cursor: pointer;
 }
-
-
-@media (max-width:900px) {
-  .buy_container {
-    flex-direction: column;
-    margin-top: 40px;
-    width: 90%;
-  }
-  .c333{
-    display: flex;
-    justify-content: center;
-  }
-}
