@@ -38,6 +38,9 @@ position: relative;
   background-color:#f15623 !important ;
   border-color: #f15623 !important;
   color: white !important;
+  padding-right: 8px !important;
+  padding-left: 10px !important;
+
 }
 
 .img_1{
