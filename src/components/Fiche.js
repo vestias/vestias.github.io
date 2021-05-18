@@ -48,11 +48,15 @@ class Fiche extends Component {
   render() {
     return (
       <div className="fiche">
+        <div className="fiche_title" >
         <p className="firstp" > Appartement À Vendre à Nejma Tanger</p>
         <p className="secondp" > À VENDRE    1.590.000 MAD</p>
+        </div>
+       
         <div className="grid-container2">
-          <div className="c11">
-            <div className="icons">
+          <div className="c22">
+            
+          <div className="icons">
               <div className="c4">
                 <SocialIcon url="https://twitter.com/" />
               </div>
@@ -66,9 +70,6 @@ class Fiche extends Component {
                 <SocialIcon url="https://youtube.com" />
               </div>
             </div>
-          </div>
-          <div className="c22">
-            {" "}
             <ImageGallery items={images} />
           </div>
           <div className="c33">

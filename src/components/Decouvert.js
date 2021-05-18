@@ -123,16 +123,16 @@ function MyComponent(props) {
       {items}
 
         <div className="pagination">
-          <a href="/Decouvert">&laquo;</a>
-          <a href="/Decouvert">1</a>
-          <a className="active" href="/Decouvert">
+          <a href="Decouvert">&laquo;</a>
+          <a href="Decouvert">1</a>
+          <a className="active" href="Decouvert">
             2
           </a>
-          <a href="/Decouvert">3</a>
-          <a href="/Decouvert">4</a>
-          <a href="/Decouvert">5</a>
-          <a href="/Decouvert">6</a>
-          <a href="/Decouvert">&raquo;</a>
+          <a href="Decouvert">3</a>
+          <a href="Decouvert">4</a>
+          <a href="Decouvert">5</a>
+          <a href="Decouvert">6</a>
+          <a href="Decouvert">&raquo;</a>
         </div>
       </div>
     </div>
