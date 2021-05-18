@@ -140,4 +140,7 @@ p.contact_title {
 		border:none;
 		width: 90%;
 	}
+	.c22{
+		flex-direction: column;
+	}
 }
