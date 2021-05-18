@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 
 import { Icon } from 'react-icons-kit'
 import { home } from 'react-icons-kit/icomoon/home'
+import AuthService from "../services/auth.service";
 
 class Navbar extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     var months = [
       "January",
@@ -35,7 +36,24 @@ class Navbar extends React.Component {
 
     this.state = {
       date: date,
+      currentUser: undefined,
     };
+  }
+
+  componentDidMount() {
+    const user = AuthService.getCurrentUser();
+
+    if (user) {
+      this.setState({
+        currentUser: user,
+        showAdminBoard: user.roles.includes("ROLE_ADMIN"),
+      });
+    }
+  }
+
+  logOut() {
+    AuthService.logout();
+    window.location.replace("/accueil");
   }
 
   toggleNav = function(e){
@@ -56,6 +74,8 @@ class Navbar extends React.Component {
     }
   }
   render() {
+    const { currentUser,showAdminBoard} = this.state;
+
     return (
       <header>
         <div className="container-nav">
@@ -92,36 +112,106 @@ class Navbar extends React.Component {
             </Link>
           </div>
 
-          <div className="butt_acc">
-            <p class="date_p">{this.state.date}</p>
-            <Link
-              className="nav-link btn_c btn btn-primary"
-              to="users"
-              type="button"
-              style={{ textDecoration: "none" }}
-            >
-              Mon compte
-            </Link>
-            <div className="icon">
-              <SocialIcon
-                bgColor=""
-                style={{ height: 30, width: 30 }}
-                fgcolor="#1a789a"
-                url="https://facebook.com"
-                target="_blank"
-              />
-            </div>
-            <div className="icon">
-              <SocialIcon
-                bgColor=""
-                style={{ height: 30, width: 30 }}
-                fgcolor="#1a789a"
-                url="https://twitter.com"
-                target="_blank"
-              />
-            </div>
-          </div>
-        
+          {currentUser ? (
+              <div className="butt_acc">
+                <p class="date_p">{this.state.date}</p>
+               
+                <div
+                   onClick={this.handleDropDownMenu}
+                    class="nav-item hover-menu-nav-link"
+                    
+                  >
+                    <a class="nav-link btn_c btn btn-primary">Mon compte</a>
+                    <div class="hover_menu">
+                      <Link
+                        className="nav-link "
+                        to="users"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <span href="users">Utilisateur</span>
+                      </Link>
+                      <Link
+                        className="nav-link"
+                        to="annonces"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <span href="annonces">Annonces</span>
+                      </Link>
+                      <Link
+                        className="nav-link"
+                        to="slides"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <span href="slides">slides</span>
+                      </Link>
+                      <Link
+                        className="nav-link"
+                        to="Ajouter_annonces"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <span href="Ajouter_annonces">Ajouter Annonce</span>
+                      </Link>
+                    </div>
+                  </div>
+                <Link
+                  className="logout_button nav-link btn_c btn btn-primary"
+                  to="login"
+                  type="button"
+                  style={{ textDecoration: "none" }}
+                  onClick={this.logOut}
+                >
+                  logout
+                </Link>
+                <div className="icon">
+                  <SocialIcon
+                    bgColor=""
+                    style={{ height: 30, width: 30 }}
+                    fgcolor="#1a789a"
+                    url="https://facebook.com"
+                    target="_blank"
+                  />
+                </div>
+                <div className="icon">
+                  <SocialIcon
+                    bgColor=""
+                    style={{ height: 30, width: 30 }}
+                    fgcolor="#1a789a"
+                    url="https://twitter.com"
+                    target="_blank"
+                  />
+                </div>
+              </div>
+            ) : (
+              <div className="butt_acc">
+                <p class="date_p">{this.state.date}</p>
+                <Link
+                  className="nav-link btn_c btn btn-primary"
+                  to="login"
+                  type="button"
+                  style={{ textDecoration: "none" }}
+                >
+                  Se connecter
+                </Link>
+                <div className="icon">
+                  <SocialIcon
+                    bgColor=""
+                    style={{ height: 30, width: 30 }}
+                    fgcolor="#1a789a"
+                    url="https://facebook.com"
+                    target="_blank"
+                  />
+                </div>
+                <div className="icon">
+                  <SocialIcon
+                    bgColor=""
+                    style={{ height: 30, width: 30 }}
+                    fgcolor="#1a789a"
+                    url="https://twitter.com"
+                    target="_blank"
+                  />
+                </div>
+              </div>
+            )}
         </div>
        
         <nav class="container-nav_links">
@@ -156,65 +246,48 @@ class Navbar extends React.Component {
                     <span href="Contact">Contact</span>
                   </Link>
                 </li>
-                <li className="">
-                  <Link
-                    className=""
-                    to="Contact"
-                    style={{ textDecoration: "none" }}
+                
+                
+                   {showAdminBoard && (
+                  <li
+                    onClick={this.handleDropDownMenu}
+                    class="nav-item hover-menu-nav-link"
                   >
-                    <span href="Contact">Conseils Achats</span>
-                  </Link>
-                </li>
-                <li className="" >
-                  <Link
-                    className=""
-                    to="Contact"
-                    style={{ textDecoration: "none" }}
-                  >
-                    <span href="Contact">Financement</span>
-                  </Link>
-                </li>
-                <li onClick={this.handleDropDownMenu} class="nav-item hover-menu-nav-link">
-                  <a
-                    class="nav-link"
-                    href="#"
-                  >
-                    Mon compte
-                  </a>
-                  <div
-                    class="hover_menu"
-                  >
-                    <Link
-                      className="nav-link "
-                      to="users"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <span href="users">Utilisateur</span>
-                    </Link>
-                    <Link
-                      className="nav-link"
-                      to="annonces"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <span href="annonces">Annonces</span>
-                    </Link>
-                    <Link
-                      className="nav-link"
-                      to="slides"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <span href="slides">slides</span>
-                    </Link>
-                    <Link
-                      className="nav-link"
-                      to="Ajouter_annonces"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <span href="Ajouter_annonces">Ajouter Annonce</span>
-                    </Link>
-                  </div>
-                </li>
-              </ul>
+                    <a class="nav-link">Mon compte</a>
+                    <div class="hover_menu">
+                      <Link
+                        className="nav-link "
+                        to="users"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <span href="users">Utilisateur</span>
+                      </Link>
+                      <Link
+                        className="nav-link"
+                        to="annonces"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <span href="annonces">Annonces</span>
+                      </Link>
+                      <Link
+                        className="nav-link"
+                        to="slides"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <span href="slides">slides</span>
+                      </Link>
+                      <Link
+                        className="nav-link"
+                        to="Ajouter_annonces"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <span href="Ajouter_annonces">Ajouter Annonce</span>
+                      </Link>
+                    </div>
+                  </li>
+                )} 
+                
+                   </ul>
             </div>
           </nav>
 

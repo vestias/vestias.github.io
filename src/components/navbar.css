@@ -37,6 +37,7 @@ position: relative;
 .btn_c{
   background-color:#f15623 !important ;
   border-color: #f15623 !important;
+  color: white !important;
 }
 
 .img_1{
@@ -62,6 +63,7 @@ position: relative;
   width: 55%;
   margin : 0 auto;
 }
+
 .container-nav_links a{
 
   display: block;
@@ -74,7 +76,7 @@ position: relative;
   list-style: none;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   margin: 0;
   padding: 0;
@@ -92,9 +94,14 @@ position: relative;
   padding: 0 !important;
   margin: 0 !important;
   width: 100%;
-  background-color: #19315b;
+  background-color: #f15623;
+  color: white !important;
   position: absolute;
   display: none;
+}
+.hover_menu a{
+  color: white !important;
+  font-size: 14px;
 }
 .hover_menu.active{
   display: block;
@@ -215,4 +222,9 @@ position: relative;
     height: 100%;
     overflow-y: auto;
   }
+}
+
+.logout_button{
+  margin-left: 10px;
+  background-color: red !important;
 }

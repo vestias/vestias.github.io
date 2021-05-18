@@ -12,6 +12,7 @@ import users from './components/Users';
 import Annonces from './components/Annonces';
 import slides from './components/slides';
 import Ajouter_annonces from './components/Ajouter_annonces';
+import Login from "./components/Login";
 
 import { SocialIcon } from 'react-social-icons';
 
@@ -47,6 +48,7 @@ function App() {
              <Route path="/Annonces" component={Annonces}/>
              <Route path="/slides" component={slides}/>
              <Route path="/Ajouter_annonces" component={Ajouter_annonces}/>
+             <Route exact path="/login" component={Login} />
 
             <Route component={Error}/>
            </Switch>
