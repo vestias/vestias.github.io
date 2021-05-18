@@ -70,7 +70,9 @@ class Fiche extends Component {
                 <SocialIcon url="https://youtube.com" />
               </div>
             </div>
+            <div className="gallery_div">
             <ImageGallery items={images} />
+            </div>
           </div>
           <div className="c33">
             <form>
