@@ -50,17 +50,16 @@ class Accueil extends React.Component {
         </div>
   
         <div className="buy_container">
+          <div className="c444">
           <div>
             <h1 className="title6">Informations pour futur acheteur</h1>
           </div>
-          <div>
-            <div>
-              <img
+          <img
                 width="1000px"
                 src="https://www.immobilio.ma/wp-content/uploads/2021/02/Entre%CC%81e-de-l-appartement.jpg"
               />
-            </div>
-            <div className="c333">
+          </div>
+          <div className="c333">
             <form>
               <input type="text" name="name" placeholder="Votre nom" />
               <input
@@ -75,8 +74,7 @@ class Accueil extends React.Component {
               />
               <input type="submit" value="CONTACTER" />
             </form>
-          </div>
-          </div>
+          </div>   
         </div>
       </div>
     );  }

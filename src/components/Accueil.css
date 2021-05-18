@@ -28,22 +28,32 @@
 /************/
 
 .buy_container {
-  margin: 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%; 
+  margin : 15px auto;
   border: 1px solid black;
-  height: 260px;
 }
 
 .buy_container img {
   width: 300px;
-  height: 200px;
+  margin: auto;
   display: block;
-  margin: 0;
+}
+.c444{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .title6 {
   text-align: left;
   font-size: 25px;
   padding-left: 20px;
+  padding-right: 20px;
+width: 100%;
   padding-top: 15px;
 }
 
@@ -58,14 +68,10 @@
 
 
 .c333 {
-	display: flex;
-  margin: 0;
-  top:-60px;
-  position: relative;
+  min-width: 400px;
 }
 .c333 form{
 	width: 75%;
-	margin : 30px auto;
 }
 .c333 form p{
 	color:#000;
@@ -89,4 +95,17 @@
 	font-weight: bold;
 	opacity: 1;
 	cursor: pointer;
+}
+
+
+@media (max-width:900px) {
+  .buy_container {
+    flex-direction: column;
+    margin-top: 40px;
+    width: 90%;
+  }
+  .c333{
+    display: flex;
+    justify-content: center;
+  }
 }

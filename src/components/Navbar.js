@@ -225,7 +225,7 @@ class Navbar extends React.Component {
                     to="Accueil"
                     style={{ textDecoration: "none" }}
                   >
-                    <span href="Accueil">Accueil</span>
+                    <span onClick={this.toggleNav}>Accueil</span>
                   </Link>
                 </li>
                 <li className="" itemprop="name">
@@ -234,7 +234,7 @@ class Navbar extends React.Component {
                     to="Decouvert"
                     style={{ textDecoration: "none" }}
                   >
-                    <span href="Decouvert">Logement</span>
+                    <span onClick={this.toggleNav}>Logement</span>
                   </Link>
                 </li>
                 <li className="" >
@@ -243,7 +243,7 @@ class Navbar extends React.Component {
                     to="Contact"
                     style={{ textDecoration: "none" }}
                   >
-                    <span href="Contact">Contact</span>
+                    <span onClick={this.toggleNav}>Contact</span>
                   </Link>
                 </li>
                 
