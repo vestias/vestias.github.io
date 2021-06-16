@@ -1,11 +1,9 @@
-.card{
-    padding : 100px 40% ;
+.card {
+  padding: 100px 40%;
 }
 
-
-@media (max-width:900px) {
-    .card{
-        padding : 15%;
-    }
-    
+@media (max-width: 900px) {
+  .card {
+    padding: 15%;
+  }
 }

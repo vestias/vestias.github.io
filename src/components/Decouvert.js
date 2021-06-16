@@ -65,6 +65,27 @@ function MyComponent(props) {
     );
   }
 
+   
+  var nb_pages = 6;
+  var current_page = 2;
+  var pagination = [];
+  var i;
+  for (i = 1; i <= nb_pages; i++) {
+    if(i==current_page)
+    {
+      pagination.push(
+        <a className="active" href="Decouvert">{i}</a>
+      );
+    }
+    else
+    {
+      pagination.push(
+        <a href="Decouvert">{i}</a>
+      );
+    }
+  
+  }
+
   var Array2 = [
     {
       src:"https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg"
@@ -82,12 +103,13 @@ function MyComponent(props) {
       src:"https://www.immobilio.ma/wp-content/uploads/2021/02/Terrain-Ain-Diab.jpeg"
      },
   ];
-  
+ 
 
   class Decouvert extends React.Component {
    
      ville = "all";
      zone  = "all";
+     nb_pages = 6;
     constructor(props) {
       
       super(props);
@@ -124,14 +146,7 @@ function MyComponent(props) {
 
         <div className="pagination">
           <a href="Decouvert">&laquo;</a>
-          <a href="Decouvert">1</a>
-          <a className="active" href="Decouvert">
-            2
-          </a>
-          <a href="Decouvert">3</a>
-          <a href="Decouvert">4</a>
-          <a href="Decouvert">5</a>
-          <a href="Decouvert">6</a>
+          {pagination}
           <a href="Decouvert">&raquo;</a>
         </div>
       </div>
